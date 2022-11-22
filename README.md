@@ -5,7 +5,7 @@
 Go官方扩展库singleflight的泛型实现：
 
 ```text
-https://pkg.go.dev/golang.org/x/sync/singleflight
+https://cs.opensource.google/go/x/sync
 ```
 
 # 二、Example
