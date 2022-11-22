@@ -8,7 +8,17 @@ Go官方扩展库singleflight的泛型实现：
 https://cs.opensource.google/go/x/sync
 ```
 
-# 二、Example
+
+
+# 二、安装
+
+```go
+go get -u github.com/golang-infrastructure/go-singleflight
+```
+
+
+
+# 三、Example
 
 ```go
 package main
@@ -46,7 +56,9 @@ func main() {
 }
 ```
 
-# 三、TODO
+
+
+# 四、TODO
 
 - 写篇文章讨论一下singleflight，分析一下源码
 - 跑下benchmark，看下泛型版对性能到底有多大的影响 
