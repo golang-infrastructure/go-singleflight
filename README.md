@@ -45,5 +45,10 @@ func main() {
 
 ```
 
+# 三、TODO
+
+- 写篇文章讨论一下singleflight
+- 跑下benchmark，看下泛型版对性能到底有多大的影响 
+
 
 
