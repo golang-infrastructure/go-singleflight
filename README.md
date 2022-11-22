@@ -15,6 +15,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/golang-infrastructure/go-singleflight"
 	"math/rand"
 	"sync"
 	"time"
@@ -25,6 +26,7 @@ func main() {
 	var wg sync.WaitGroup
 	g := singleflight.Group[int]{}
 
+	begin := time.Now()
 	for i := 0; i < 10; i++ {
 		id := i
 		wg.Add(1)
@@ -39,15 +41,14 @@ func main() {
 		}()
 	}
 	wg.Wait()
+	fmt.Println("cost: ", time.Now().Sub(begin).String())
 	fmt.Println("All done")
-
 }
-
 ```
 
 # 三、TODO
 
-- 写篇文章讨论一下singleflight
+- 写篇文章讨论一下singleflight，分析一下源码
 - 跑下benchmark，看下泛型版对性能到底有多大的影响 
 
 

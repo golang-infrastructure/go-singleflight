@@ -13,6 +13,7 @@ func main() {
 	var wg sync.WaitGroup
 	g := singleflight.Group[int]{}
 
+	begin := time.Now()
 	for i := 0; i < 10; i++ {
 		id := i
 		wg.Add(1)
@@ -27,6 +28,6 @@ func main() {
 		}()
 	}
 	wg.Wait()
+	fmt.Println("cost: ", time.Now().Sub(begin).String())
 	fmt.Println("All done")
-
 }
