@@ -4,8 +4,8 @@
 
 Go官方扩展库singleflight的泛型实现：
 
-```go
-https: //pkg.go.dev/golang.org/x/sync/singleflight
+```text
+https://pkg.go.dev/golang.org/x/sync/singleflight
 ```
 
 # 二、Example
