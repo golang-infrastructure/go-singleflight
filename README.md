@@ -12,7 +12,7 @@ https://cs.opensource.google/go/x/sync
 
 # 二、安装
 
-```go
+```bash
 go get -u github.com/golang-infrastructure/go-singleflight
 ```
 
